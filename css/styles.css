@@ -1063,7 +1063,70 @@ img {
     .customers-item {
         width: calc(100% / 3 - 48px);
     }
+    .footer {
+        background-color: var(--title-color);
+        padding-top: 96px;
+        padding-bottom: 96px;
+    
+    }
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        
+        }
 
+        .footer-logo {
+        font-family: "Raleway", sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+        margin-bottom: 16px;
+        display: block;
+    }
+    .footer-text {
+        width: 264px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #F4F4FD;;
+        
+        margin-right: 24px;
+        margin-bottom: 72px;
+        display: inline-block;
+    }
+    .footer-subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+        display: inline-block;
+    } 
+    .footer-subscribe {
+        
+    }
+    .subscribe-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+        display: inline-block;
+    }
+    .footer-form {
+        display: flex;
+        }
+    .footer-label {
+        margin-right: 24px;
+    }
+    .footer-input-text {
+        width: 264px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1159,6 +1222,7 @@ img {
     
     .footer-container {
     display: flex;
+    flex-wrap: nowrap;
     }
     
     .footer-logotype {
@@ -1174,7 +1238,8 @@ img {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-        display: block;
+        margin-bottom: 16px;
+        display: inline-block;
     }
     
     .footer-span {
@@ -1187,8 +1252,8 @@ img {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #F4F4FD;;
-        margin-top: 16px;
         
+        display: inline-block;
     }
     
     .footer-soc-media {
@@ -1243,6 +1308,7 @@ img {
     
     .footer-subscribe {
         margin-right: 24px;
+        display: inline-block;
     }
     
     .subscribe-title {
