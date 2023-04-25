@@ -546,7 +546,7 @@ display: none;
 }
 
 .customers-logos-container {
-    padding: 16px 32px;
+    /* padding: 16px 32px; */
 }
 
 .customers-title {
@@ -564,7 +564,6 @@ display: none;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0 16px; 
-    
 }
 
 .customers-item {
@@ -613,6 +612,7 @@ display: none;
     padding-bottom: 100px; */
     padding-top: 96px;
     padding-bottom: 96px;
+    /* display: block; */
 }
 
 .footer-container {
@@ -623,18 +623,19 @@ display: none;
 /* margin-right: 120px; */
 }
 
-
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-align: center;
     text-transform: uppercase;
     color: #4d5ae5;
     display: flex;
     justify-content: center;
     margin-bottom: 16px;
+
 }
 
 .footer-span {
@@ -648,7 +649,6 @@ display: none;
     letter-spacing: 0.02em;
     color: #F4F4FD;
     margin: auto;
-    margin-bottom: 72px;
     display: flex;
     justify-content: center;
 }
@@ -662,6 +662,7 @@ display: none;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #FFFFFF;
     margin-bottom: 16px;
     display: flex;
@@ -1370,8 +1371,13 @@ img {
     .team-list {
         gap: 64px 24px;
     }
-    .customers-item {
+}
+
+    /* .customers-item {
         width: calc(100% / 3 - 48px);
+    } */
+    .customers-item:nth-child(n+4) {
+        margin-bottom: 0;
     }
     .footer {
         background-color: var(--title-color);
@@ -1392,9 +1398,10 @@ img {
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        text-align: start;
         color: #4d5ae5;
+        display: flex;
         margin-bottom: 16px;
-        display: block;
     }
     .footer-text {
         width: 264px;
@@ -1402,19 +1409,19 @@ img {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #F4F4FD;;
-        
         margin-right: 24px;
         margin-bottom: 72px;
-        display: inline-block;
+        display: flex;
     }
     .footer-subtitle {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
+        text-align: start;
         letter-spacing: 0.02em;
         color: #FFFFFF;
         margin-bottom: 16px;
-        display: inline-block;
+        display: flex;
     } 
     .footer-subscribe {
         padding-right: 42px;
@@ -1437,7 +1444,6 @@ img {
     .footer-input-text {
         width: 264px;
     }
-}
 
 @media screen and (min-width: 1158px) {
     .container {
@@ -1566,12 +1572,16 @@ img {
     }
     .principles-list {
         display: flex;
-        width: calc ((100% - 24px) / 3);
+        flex-basis: calc ((100% - 24px) / 3);
         justify-content: center;
     }
     .principles-item {
         width: 264px;
         display: inline-block;
+        margin-right: 24px;
+    }
+    .principles-item:last-child {
+        margin-right: 0;
     }
     .principles-feauters-icon {
         display: flex;
@@ -1584,6 +1594,7 @@ img {
     }
     .principles-title {
         width: 100%;
+        text-align:start;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -1592,12 +1603,12 @@ img {
         margin-bottom: 8px;
     }
     .principles-text {
+        font-weight: 400;
         width: 264px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-color);
-        margin-right: 24px;
         display: inline-block;
     }
     .job {
@@ -1633,6 +1644,9 @@ img {
         padding-top: 120px;
         padding-bottom: 120px;
     }
+    .customers-logos-container {
+        padding: 0;
+    }
     .customers-list {
         flex-wrap: nowrap;
         gap: 24px;
@@ -1664,9 +1678,10 @@ img {
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        text-align: start;
         color: #4d5ae5;
         margin-bottom: 16px;
-        display: inline-block;
+        display: block;
     }
     
     .footer-span {
