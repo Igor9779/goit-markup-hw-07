@@ -259,12 +259,6 @@ display: none;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #434455;
-}
-.menu-contact-tel:hover {
-    color: #4D5AE5;
-}
-.menu-contact-tel:focus {
     color: #4D5AE5;
 }
 .menu-contact-email {
@@ -404,7 +398,6 @@ display: none;
 .principles-item {
     margin-bottom: 72px;
 }
-
 .principles-item:last-child {
     margin-bottom: 0;
 }
@@ -1206,8 +1199,14 @@ justify-content: center;
     .header-list, .header-adress {
         display: none;
     }
-    .principles-text{
+    /* .principles-text{
         margin-bottom: 72px;
+    } */
+    .principles-item {
+        margin-bottom: 72px;
+    }
+    .principles-item:last-child {
+        margin-bottom: 0;
     }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
     .container {
@@ -1263,7 +1262,7 @@ justify-content: center;
     .header-link {
         /* width: 100%; */
         font-weight: 500;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--title-color);
@@ -1369,8 +1368,9 @@ justify-content: center;
     }
     .principles-list {
         display: flex;
-        flex-wrap: wrap;
-        gap: 72px 24px;
+      flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
     }
     .principles-item {
         width: 356px;
@@ -1392,16 +1392,23 @@ justify-content: center;
     .team-list {
         gap: 64px 24px;
     }
+    .customers-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 72px 16px;
+    }
     .customers-item {
-        width: calc(100% / 3 - 48px);
+        margin-bottom: 0;
+        /* width: calc(100% / 3 - 48px); */
     }
     .footer {
         background-color: var(--title-color);
-        padding-top: 96px;
-        padding-bottom: 96px;
-    
+        padding: 96px 0;
     }
+
     .footer-container {
+        width: 584px;
         display: flex;
         flex-wrap: wrap;
         row-gap: 72px;
@@ -1426,7 +1433,6 @@ justify-content: center;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #F4F4FD;;
-        margin-right: 24px;
         display: inline-block;
     }
     .footer-soc-media {
@@ -1442,6 +1448,11 @@ justify-content: center;
         margin-bottom: 16px;
         display: inline-block;
     } 
+    .footer-soc-item {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0;
+    }
     .footer-subscribe {
     }
     .subscribe-title {
@@ -1461,6 +1472,7 @@ justify-content: center;
     }
     .footer-input-text {
         width: 264px;
+        margin-bottom: 0;
     }
 }
 .send-icon {
@@ -1566,12 +1578,9 @@ justify-content: center;
         left: 0;
         top: 44px;
     }
-    
-    
     .header-list-contacts {
         display: flex;
     }
-    
     .header-adress {
         font-style: normal;
         display: inline-block;
@@ -1616,12 +1625,12 @@ justify-content: center;
     }
     .principles-list {
         display: flex;
-        width: calc ((100% - 24px) / 3);
         justify-content: center;
+        gap: 24px;
     }
     .principles-item {
         width: 264px;
-        margin-right: 24px;
+        margin-bottom: 0;
         display: inline-block;
     }
     .principles-item:last-child {
@@ -1693,6 +1702,7 @@ justify-content: center;
         gap: 24px;
     }
     .customers-item {
+        margin-bottom: 0;
         width: 168px;
     }
     .footer {
@@ -1807,14 +1817,14 @@ justify-content: center;
     
     .footer-form {
     display: flex;
+    gap: 24px;
     }
     
     .footer-label {
-        margin-right: 24px;
+        /* margin-right: 24px; */
     }
     
     .footer-input-text {
-    
         width: 264px;
         height: 40px;
         background-color: #2E2F42;
@@ -1827,6 +1837,8 @@ justify-content: center;
         color: #FFFFFF;
         padding: 8px 0 8px 16px;
         outline: transparent;
+        margin-bottom: 0;
+        display: block;
     }
     
     ::placeholder {
