@@ -675,12 +675,13 @@ display: none;
 display: flex;
 gap: 16px;
 justify-content: center;
+margin-bottom: 72px;
 }
 
 .footer-soc-item {
     width: 40px;
     height: 40px;
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
 }
 
 .footer-soc-link {
@@ -917,6 +918,9 @@ justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
+    .portfolio-list{
+        margin-bottom: 72px;
+    }
     .portfolio-list-photo {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1113,7 +1117,10 @@ justify-content: center;
 .modal-textarea:focus {
     border-color: #4D5AE5;
 }
-
+::placeholder{
+    font-size: 12px;
+    color: #8E8F99;
+}
 .check-text{
     display: flex;
     font-size: 12px;
@@ -1256,6 +1263,10 @@ justify-content: center;
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .solutions {
+        height: 432px;
+        text-align: center;
+        padding-top: 112px;
+        padding-bottom: 112px;
         background-image:linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
@@ -1403,6 +1414,8 @@ justify-content: center;
         display: none;
     }
     .solutions {
+        padding-top: 112px;
+        padding-bottom: 112px;
         background-color: var(--title-color);
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
@@ -1427,7 +1440,7 @@ justify-content: center;
         color: #ffffff;
         width: 496px;
         margin: 0 auto;
-        margin-bottom: 48px;
+        margin-bottom: 36px;
     }
     .principles {
         
@@ -1514,10 +1527,12 @@ justify-content: center;
         margin-bottom: 16px;
         display: inline-block;
     } 
+    .footer-soc-list{
+        margin-bottom: 0;
+    }
     .footer-soc-item {
         width: 40px;
         height: 40px;
-        margin-bottom: 0;
     }
     .footer-subscribe {
     }
@@ -1675,6 +1690,11 @@ justify-content: center;
     }
     .mobile-menu {
         display: none;
+    }
+    .solutions{
+        padding-top: 188px;
+        padding-bottom: 188px;
+        height: 600px;
     }
     .solutions-title {
         font-size: 56px;
@@ -1834,6 +1854,7 @@ justify-content: center;
     .footer-soc-list {
     display: flex;
     gap: 16px;
+    margin-bottom: 0;
     }
     
     .footer-soc-item {
