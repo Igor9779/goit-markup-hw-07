@@ -911,8 +911,8 @@ justify-content: center;
 
 .portfolio-item-photo {
     flex-basis: calc(100% / 3 - 24px);
-    margin-right: 24px;
-    margin-bottom: 48px;
+    /* margin-right: 24px;
+    margin-bottom: 48px; */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
